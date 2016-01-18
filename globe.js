@@ -139,12 +139,12 @@ function mercator_upsidedown(container, world, countryData, ctx) {
     ctx = ctx || {};
     scale = ctx.scale || 500;
     width = ctx.width || 600;
-    height = ctx.height || 500;
+    height = ctx.height || 300;
 
     ctx["projection"] = d3.geo.mercator()
+        .translate([width/2 + 30, 105])
         .rotate([0, 0, 180])
-        .translate([width/2, height/2 - 50])
-        .center([0, -70])
+        .center([-20, 0])
         .scale(scale)
 
     ctx["allow_x"] = -1;

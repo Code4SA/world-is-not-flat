@@ -63,6 +63,7 @@
                 </div>
                 <div class="col-md-3">
                     <div id="globe"></div>
+                    <p class="text-center"><strong><small>Drag globe to give it a whirl</small></strong></p>
                 </div>
 
             </div>
@@ -112,7 +113,9 @@
 
             <div class="row">
                 <div id="mercator" class="col-md-7 col-md-offset-3"></div>
-                <p class="text-center"><strong><small>Drag globe to give it a whirl</small></strong></p>
+            </div>
+            <div class="row">
+                <p class="text-center col-md-6 col-md-offset-3"><strong><small>Drag the map to give it a whirl</small></strong></p>
             </div>
 
             <div class="row">
@@ -128,9 +131,12 @@
             </div>
 
             <div class="row">
-                <p class="col-md-8 col-md-offset-2">
+                <div class="col-md-8 col-md-offset-2">
                     <div id="southup"></div>
-                </p>
+                </div>
+            </div>
+            <div class="row">
+                <p class="text-center col-md-6 col-md-offset-3"><strong><small>Drag the map to give it a whirl</small></strong></p>
             </div>
             <div class="row">
                 <p class="col-md-8 col-md-offset-2">
@@ -152,12 +158,14 @@
 
             <div class="row">
                 <p class="col-md-8 col-md-offset-2">
-                Image credits:
-                Christopher Sessums (https://www.flickr.com/photos/csessums/11427686175/)
-                keishkakeishka (https://www.flickr.com/photos/keishka/2752119942/)
-                Gerry Machen (https://www.flickr.com/photos/gellscom/13331625404/)
-                fdecomite (https://www.flickr.com/photos/fdecomite/17311156985/)
+                <strong><small>Image credits:</small></strong><br/>
+                <small>
+                Christopher Sessums (https://www.flickr.com/photos/csessums/11427686175/)<br/>
+                keishkakeishka (https://www.flickr.com/photos/keishka/2752119942/)<br/>
+                Gerry Machen (https://www.flickr.com/photos/gellscom/13331625404/)<br/>
+                fdecomite (https://www.flickr.com/photos/fdecomite/17311156985/)<br/>
                 Mike Bostock
+                </small>
                 </p>
             </div>
         </div>
@@ -183,10 +191,10 @@
                 });
 
                 var globe2 = mercator_upsidedown(d3.select("#southup"), world, countryData, {
-                        width: 1000,
-                        height: 280,
+                        width: 600,
+                        height: 350,
                         allow_y : 0,
-                        scale : 100
+                        scale : 80
                 });
 
                 var globe3 = mercator(d3.select("#mercator"), world, countryData, {
