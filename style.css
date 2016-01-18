@@ -4,7 +4,7 @@ h1 {
 #globe {
     height:250px;
     width: 100%;
-    margin-left: -40px;
+    margin-left: -35px;
 
 }
 
@@ -74,4 +74,9 @@ select {
   stroke-width: .5px;
   stroke-opacity: .3;
   stroke-dasharray: 5,5;
+}
+
+.instructions {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-align: center;
 }
