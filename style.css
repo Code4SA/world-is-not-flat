@@ -1,0 +1,74 @@
+#globe {
+    height:250px;
+    width: 100%;
+    margin-left: -40px;
+
+}
+
+#southup, #mercator {
+    width: 550px;
+    height: 100%;
+}
+
+#proj_grinten, #proj_larrivee, #proj_albers, #proj_sinu {
+    width: 400px;
+}
+
+.image100 {
+    width: 100%;
+}
+
+.row {
+    padding-bottom: 5px;
+}
+
+.water {
+  fill: white;
+  cursor: pointer;
+}
+
+.land {
+  fill: #69D2E7;
+  stroke: #50576A;
+  stroke-width: 0.7px;
+  cursor: pointer;
+}
+
+.land:hover {
+  fill:yellow;
+  stroke-width: 1px;
+}
+
+.focused {
+  fill: #33CC33;
+}
+
+select {
+  position: absolute;
+  top: 20px;
+  left: 580px;
+  border: solid #ccc 1px;
+  padding: 3px;
+  box-shadow: inset 1px 1px 2px #ddd8dc;
+}
+
+.countryTooltip {
+  position: absolute;
+  display: none;
+  pointer-events: none;
+  background: #fff;
+  padding: 5px;
+  text-align: left;
+  border: solid #ccc 1px;
+  color: #666;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.graticule {
+  fill: none;
+  stroke: #777;
+  stroke-width: .5px;
+  stroke-opacity: .3;
+  stroke-dasharray: 5,5;
+}
